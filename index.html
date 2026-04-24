@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toyama Univ. MR Project</title>
+    <meta
+      name="description"
+      content="富山大学MRプロジェクトの紹介サイト。Mixed Realityに関する研究・開発・お知らせを発信します。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-wrap">
+        <p class="brand-sub">University of Toyama</p>
+        <h1>MR Project</h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="kicker">Future Interface Lab</p>
+          <h2 id="hero-title">Mixed Realityで、情報技術の学びを体験に変える。</h2>
+          <p>
+            富山大学MRプロジェクトは、AR/VR・3D可視化・インタラクション設計など、
+            情報系の技術を実践的に研究するチームです。
+          </p>
+          <a class="cta" href="about.html">Learn More</a>
+        </div>
+        <div class="hero-visual" aria-label="トップ画像スライダー">
+          <div class="hero-slider" aria-live="off">
+            <div class="hero-track">
+              <img src="src/img/noimg.png" alt="MR Project slide 1" />
+              <img src="src/img/noimg.png" alt="MR Project slide 2" />
+              <img src="src/img/noimg.png" alt="MR Project slide 3" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="panel" aria-labelledby="about-title">
+        <div class="section-head">
+          <h3 id="about-title">About Project</h3>
+          <a class="text-link" href="about.html">Open Page</a>
+        </div>
+        <p>
+          このプロジェクトでは、MRを活用した教育・研究・地域連携の可能性を広げることを目指しています。
+          空間コンピューティング、ユーザー体験設計、リアルタイム描画など、情報系の学習成果を形にします。
+        </p>
+        <div class="about-grid">
+          <article>
+            <h4>Research Themes</h4>
+            <p>ARナビゲーション、VR教材、デジタルツイン、3D UI設計など。</p>
+          </article>
+          <article>
+            <h4>Activities</h4>
+            <p>プロトタイプ開発、勉強会、学会発表、学内外向けデモ展示を実施。</p>
+          </article>
+          <article>
+            <h4>Members</h4>
+            <p>学生・教員・共同研究者で構成。分野横断でアイデアを検証します。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="blog" class="panel" aria-labelledby="blog-title">
+        <div class="section-head">
+          <h3 id="blog-title">Blog</h3>
+          <a class="text-link" href="blog.html">View All Posts</a>
+        </div>
+        <p class="blog-note">
+          新しい投稿順で表示されます。投稿は <strong>blog-data.js</strong> の配列に追加するだけで更新できます。
+        </p>
+        <div id="blog-list" class="blog-list" data-limit="3" aria-live="polite"></div>
+      </section>
+
+      <section id="contact" class="panel" aria-labelledby="contact-title">
+        <div class="section-head">
+          <h3 id="contact-title">Contact</h3>
+          <a class="text-link" href="contact.html">Open Page</a>
+        </div>
+        <p>見学希望・共同研究・取材依頼は以下へご連絡ください。</p>
+        <ul class="contact-list">
+          <li>Email: mr-project@example.ac.jp</li>
+          <li>Location: 富山大学 五福キャンパス</li>
+          <li>X: @toyama_mr_project</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Toyama University MR Project</p>
+    </footer>
+
+    <script src="src/blog-data.js"></script>
+    <script src="src/script.js"></script>
+  </body>
+</html>
